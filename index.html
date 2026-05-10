@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="author" content="Danu Damanhuri" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | SITTA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="login-body">
+    <div class="login-container">
+      <!-- Logo SITTA -->
+      <div class="logo-wrapper">
+        <img src="LogoUT.jpg" alt="Logo SITTA" class="logo-sitta-login" />
+      </div>
+
+      <h2>SITTA - Sistem Informasi Tracking & Transaksi Ajar</h2>
+
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan email" required />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan password"
+          required />
+
+        <button type="submit" class="btn-login">Login</button>
+
+        <div class="login-options">
+          <a href="#" id="forgotPassword">Lupa Password?</a>
+          <a href="#" id="register">Daftar</a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Modal Lupa Password -->
+    <div id="modalForgot" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Lupa Password</h3>
+        <p>Silakan hubungi admin SITTA untuk reset password Anda.</p>
+      </div>
+    </div>
+
+    <!-- Modal Daftar -->
+    <div id="modalRegister" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Daftar Akun Baru</h3>
+        <p>Untuk saat ini, pendaftaran akun hanya dilakukan oleh admin.</p>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  
+  <div id="footer"></div>
+
+  <!-- Script to dynamically create footer using JavaScript (ASCII codes) -->
+  <script>
+    const footer = document.createElement("footer");
+    footer.innerHTML =
+      "<p>" +
+      String.fromCharCode(
+        0xa9,
+        0x20,
+        0x32,
+        0x30,
+        0x32,
+        0x36,
+        0x20,
+        0x2d,
+        0x20,
+        0x43,
+        0x72,
+        0x65,
+        0x61,
+        0x74,
+        0x65,
+        0x64,
+        0x20,
+        0x62,
+        0x79,
+        0x20
+      ) +
+      '<strong><a href="https://github.com/danudamanhuri" target="_blank">Danu Damanhuri</a></strong>' +
+      "</p>";
+
+    document.body.appendChild(footer);
+  </script>
+  </body>
+</html>
